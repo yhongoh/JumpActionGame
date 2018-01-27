@@ -306,7 +306,7 @@ public class GameScreen extends ScreenAdapter {
             Enemy enemy = mEnemies.get(i);
 
             if (mPlayer.getBoundingRectangle().overlaps(enemy.getBoundingRectangle())) {
-                Gdx.app.log("JampActionGame", "HIT_ENEMY");
+                Gdx.app.log("JumpActionGame", "HIT_ENEMY");
                 sound1.play(1.0f);
                 mGameState = GAME_STATE_GAMEOVER;
                 return;
